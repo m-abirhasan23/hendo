@@ -1,0 +1,105 @@
+/* import fonts  */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap");
+
+/* custom styles  */
+:root {
+  --font-primary: "Poppins", sans-serif;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+blockquote,
+figure,
+figcaption,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set font-size and font-family for body */
+body {
+  font-size: 16px;
+  font-family: var(--font-primary);
+}
+
+/* Remove text decoration from <a> tags */
+a {
+  text-decoration: none;
+}
+
+/* Make list style none on <ul> tags */
+ul {
+  list-style: none;
+}
+
+/* Remove list styles (bullets and numbers) on <ol> and <ul> tags */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove outline for buttons and links */
+button,
+a:focus {
+  outline: none;
+}
+
+/* Set default link colors */
+a:link {
+  color: #333;
+}
+a:visited {
+  color: #666;
+}
+
+/* Set max-width for images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* custom scrollbar  */
+/* Target scrollbar in webkit-based browsers */
+::-webkit-scrollbar {
+  width: 6px; /* Adjust the width to your desired size */
+}
+
+/* Track styles */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Handle styles */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+
+/* Set box-shadow to none by default */
+/* box-shadow: none; */
+
+/* Set border-radius to none by default */
+/* border-radius: 0; */
+
+/* Set cursor to pointer for clickable elements */
+/* cursor: pointer; */
