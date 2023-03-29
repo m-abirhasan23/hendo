@@ -1,0 +1,176 @@
+/* import fonts  */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap");
+
+/* custom styles  */
+:root {
+  --font-primary: "Poppins", sans-serif;
+
+  /* color list  */
+
+  --white: 0, 0%, 100%;
+  --black: 0, 0%, 14%;
+  --grey: 0, 0%, 96%;
+  --orange: 11, 99%, 63%;
+  --lightOrange: 0, 0%, 91%;
+
+  /* !font size  */
+
+  --fs-3xl: 4.375rem;
+  --fs-2xl: 3.75rem;
+  --fs-xl: 2.8125rem;
+  --fs-lg: 1.875rem;
+  --fs-md: 1.4375rem;
+  --fs-regular: 1.2rem;
+  --fs-sm: 0.875rem;
+  --fs-xs: 0.75rem;
+
+  /* shadows & border radius  */
+  --shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  --shadow-xl: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --radius: var(--fs-regular);
+  --radius-xl: var(--fs-3xl);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+blockquote,
+figure,
+figcaption,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set font-size and font-family for body */
+body {
+  font-size: 16px;
+  font-family: var(--font-primary);
+}
+
+/* Remove text decoration from <a> tags */
+a {
+  text-decoration: none;
+}
+
+/* Make list style none on <ul> tags */
+ul {
+  list-style: none;
+}
+
+/* Remove list styles (bullets and numbers) on <ol> and <ul> tags */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove outline for buttons and links */
+button,
+a:focus {
+  outline: none;
+}
+
+/* Set max-width for images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* custom scrollbar  */
+/* Target scrollbar in webkit-based browsers */
+::-webkit-scrollbar {
+  width: 6px; /* Adjust the width to your desired size */
+}
+
+/* Track styles */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Handle styles */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+
+/* **default body sizing  */
+
+header,
+section,
+footer {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+/* custom classes  */
+
+.container {
+  width: 90%;
+  margin-inline: auto;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  font-size: var(--fs-sm);
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  background-color: hsl(var(--black));
+  border: 1px solid hsl(var(--black));
+  color: white;
+  padding: 15px 30px;
+  cursor: pointer;
+  border-radius: var(--radius-xl);
+  -webkit-border-radius: var(--radius-xl);
+  -moz-border-radius: var(--radius-xl);
+  -ms-border-radius: var(--radius-xl);
+  -o-border-radius: var(--radius-xl);
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  text-transform: uppercase;
+}
+.btn-primary:focus {
+  border: 5px solid hsl(var(--white));
+  box-shadow: var(--shadow);
+}
+/* Set box-shadow to none by default */
+/* box-shadow: none; */
+
+/* Set border-radius to none by default */
+/* border-radius: 0; */
+
+/* Set cursor to pointer for clickable elements */
+/* cursor: pointer; */

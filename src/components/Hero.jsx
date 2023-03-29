@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Pagination } from "swiper";
+import { Autoplay } from "swiper";
 import "swiper/css";
+import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import sliderData from "../data/sliderData";
@@ -17,19 +18,24 @@ export default function Hero() {
 
   return (
     <Swiper
-      pagination={pagination}
-      modules={[Pagination]}
+   
+      modules={[Autoplay]}
+      loop={true}
       className="mySwiper"
+     autoplay={{delay:15000,disableOnInteraction:false}}
     >
       {sliderData.map((data) => (
         <SwiperSlide key={data.title}>
-          <img src={data.src} alt={data.title} />
+          <img src={data.src} alt={data.title} className="slider-img"/>
+
+          <div className="slider-info">
           <small>{currentYear} new collections</small>
           <h1 className="title">{data.title}</h1>
           <p>{data.subtitle}</p>
-          <button>
-            <a href="">Shop collections</a>
-          </button>
+         
+            <button className="btn-primary">Shop collections</button>
+          
+          </div>
         </SwiperSlide>
       ))}
     </Swiper>

@@ -1,4 +1,4 @@
-const navData=[
+export const navData=[
     {
         name:"Home",
         path:"/"
@@ -21,7 +21,7 @@ const navData=[
     },
 ]
 
-const iconData=[
+export const iconData=[
     {
         src:"/cart.svg"
     },
@@ -32,7 +32,7 @@ const iconData=[
         src:"/user.svg"
     },
 ]
-const mobileMenuData=[
+export const mobileMenuData=[
     {
         src:"/open.svg"
     },
@@ -42,4 +42,21 @@ const mobileMenuData=[
     
 ]
 
-export default [navData,iconData,mobileMenuData]
+export const category=[
+    {
+        type:"men",
+        discount:70,
+        src:"/lifestyle-men.jpg"
+    },
+    {
+        type:"woman",
+        discount:50,
+        src:"/lifestyle-women.jpg"
+    },
+    {
+        type:"kids",
+        discount:60,
+        src:"/lifestyle-kids.jpg"
+    },
+]
+
